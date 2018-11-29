@@ -16,9 +16,9 @@ namespace DemoPatron.Repository
         IEnumerable<T> GetAll(string query);
 
         
-        T Create(T t);
-        int Update(T T);
-        int Delete(Expression<Func<T, bool>> predicate);
+        T Create(string query, T t);
+        int Update(string query ,int id);
+        int Delete(string query, T t);
 
     }
 }
